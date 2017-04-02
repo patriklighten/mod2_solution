@@ -1,1 +1,70 @@
+* {
+  box-sizing: border-box;
+}
 
+section {
+   padding: 30px;
+	width: 98%;
+	float: left;
+	border: 1px solid black;
+   position: relative;
+   background-color: blue;
+  overflow: auto; 
+  margin-top: 1%;
+  margin-right: 1%; 
+}
+
+section >article.label{
+   width: 15%; 
+   position: absolute;
+   top:0px;
+   right:0px;
+   border: 1px solid black;
+   text-align:center;
+   background-color: red;
+}
+.content{
+   background-color: #90EE90; 
+
+}
+@media only screen and (min-width: 992px) {
+	
+#s1 {
+		width: 32%;/*consider the margin*/
+	}
+   #s2{
+   	width: 32%;
+   }
+   #s3{
+   	width: 32%;
+   }
+   
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+#s1 {
+		width: 48.5%;/*consider the margin*/
+	}
+   #s2{
+   	width: 48.5%;
+   }
+   #s3{
+   	width: 98%;
+   }
+}
+
+@media only screen and (max-width: 767px) {
+#s1 {
+		width: 98%;
+	}
+   #s2{
+   	width: 98%;
+   }
+   #s3{
+   	width: 98%;
+   }
+}
+   
+h1 { /* there should be space between the lable and '{'*/
+   text-align:center;
+}
